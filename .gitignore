@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore session database files
+session.db
+session.db*
+
 # Distribution / packaging
 .Python
 build/
