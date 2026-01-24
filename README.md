@@ -11,3 +11,6 @@ You may need to install Black first:
 ## pip install black
 
 This will automatically format your code to follow standard Python style.
+
+Cmd to keep google-adk and google-genai being comptible.
+##  pip install -U google-adk google-genai

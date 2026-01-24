@@ -53,6 +53,7 @@ async def call_agent_async(query):
     events = runner.run_async(user_id=USER_ID, session_id=SESSION_ID, new_message=content)
 
     async for event in events:
+        print(f"Event received: {type(event)}")
         if event.is_final_response():
             final_response = event.content.parts[0].text
             print("Agent Response: ", final_response)
