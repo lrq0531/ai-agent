@@ -4,6 +4,7 @@ from google.adk.agents.llm_agent import Agent
 # This is the "Meta-Tool" that lets the agent code its own solutions
 code_tool = types.Tool(code_execution=types.ToolCodeExecution())
 
+
 # Mock tool implementation
 def get_current_weather(city: str) -> dict:
     """
